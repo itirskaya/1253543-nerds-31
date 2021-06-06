@@ -27,6 +27,9 @@
   --grey-input-error: #e74246;
 
   --grey-input-text: #444444;
+
+  --grey-button-hover: #dfdfdf;
+  --grey-button-active: #d5d5d5;
 }
 
 /* Global */
@@ -310,6 +313,18 @@ body {
   background-color: var(--basic-black);
 } */
 
+/* Catalog */
+.catalog-container h1 {
+  background-color: var(--basic-grey);
+}
+
+.catalog-container ul {
+  list-style: none;
+}
+
+.projects .button {
+  padding: 17px 72px 15px 72px;
+}
 /* Contacts */
 .footer-contacts-phone {
   color: inherit;
@@ -317,6 +332,95 @@ body {
 
 .footer-socials ul {
   list-style: none;
+}
+
+.cost input {
+  width: 80px;
+  height: 38px;
+  background-color: var(--basic-grey);
+  color: var(--dark-grey-text);
+  border-radius: 3px;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cost label {
+  color: var(--dark-grey-text);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid,
+.blocks {
+  color: var(--dark-grey-text);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-show {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 0;
+  background-color: var(--basic-grey);
+  padding: 17px 89px 15px 88px;
+}
+
+.button-show:hover {
+  background-color: var(--grey-button-hover);
+}
+
+.button-show:focus,
+.button-show:active {
+  background-color: var(--grey-button-active);
+}
+
+.button-show span:focus,
+.button-show span:active {
+  opacity: 0.1;
+}
+
+.project {
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--special);
+}
+
+.pagination-item a:hover {
+  background-color: var(--grey-button-hover);
+}
+
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--grey-button-active);
+}
+
+.button-show span:focus,
+.button-show span:active {
+  opacity: 0.3;
+}
+
+.pagination-item a:not([href]) {
+  background-color: var(--basic-white);
+  border: 3px solid #dbdbdb;
 }
 
 /* Modal form */

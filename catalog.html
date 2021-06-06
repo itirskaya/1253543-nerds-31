@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" />
   <title>Каталог Нёрдс</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <!-- TODO: logo hover, focus, active -->
+      <a class="main-header-logo" width="160" height="65">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип" />
       </a>
-      <ul>
+
+      <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a>Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
 
-      <a href="blank.html">
+      <a href="blank.html" class="bin">
         <img src="img/cart-icon.svg" width="15" height="15" alt="" />
         Корзина
       </a>
     </nav>
   </header>
 
-  <main>
+  <main class="catalog-container">
     <h1>Магазин готовых шаблонов</h1>
 
-    <section>
-      <h2>Фильтр товаров</h2>
+    <section class="filter">
+      <!-- <h2>Фильтр товаров</h2> -->
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="cost">
           <legend>Стоимость:</legend>
           <ul>
             <!-- TODO: add cost slider -->
@@ -47,7 +53,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="grid">
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -65,7 +71,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="blocks">Особенности:</legend>
           <ul>
             <li>
               <input type="checkbox" name="slider" id="slider" checked>
@@ -89,7 +95,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button-show" type="submit"><span>Показать</span></button>
       </form>
     </section>
 
@@ -109,8 +115,9 @@
       <!-- TODO: add arrows -->
     </section>
 
-    <section>
+    <section class="projects">
       <h2>Список проектов</h2>
+      <!-- TODO: image under div -->
       <ul>
         <li>
           <!-- TODO: add switcher -->
@@ -118,13 +125,15 @@
             <p>
               <img src="img/catalog/img-sedona.jpg" width="359" height="578" alt="sedona">
             </p>
-            <h3>Sedona</h3>
           </a>
-          <p>
-            Информационный сайт <br />
-            для туристов
-          </p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>Sedona</h3>
+            <p>
+              Информационный сайт <br />
+              для туристов
+            </p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
         <li>
           <!-- TODO: add switcher -->
@@ -132,13 +141,15 @@
             <p>
               <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Pink App">
             </p>
-            <h3>Pink App</h3>
           </a>
-          <p>
-            Продуктовый лендинг <br />
-            приложения для iOS и Android
-          </p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>Pink App</h3>
+            <p>
+              Продуктовый лендинг <br />
+              приложения для iOS и Android
+            </p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
         <li>
           <!-- TODO: add switcher -->
@@ -146,11 +157,14 @@
             <p>
               <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="barbershop">
             </p>
-            <h3>Barbershop</h3>
           </a>
-          <p>Сайт салона красоты. <br />
-            Для мужчин, да.</p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>Barbershop</h3>
+
+            <p>Сайт салона красоты. <br />
+              Для мужчин, да.</p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
         <li>
           <!-- TODO: add switcher -->
@@ -158,11 +172,13 @@
             <p>
               <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="mishka">
             </p>
-            <h3>MISHKA</h3>
           </a>
-          <p>Интернет-магазин <br />
-            вязаных игрушек</p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>MISHKA</h3>
+            <p>Интернет-магазин <br />
+              вязаных игрушек</p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
         <li>
           <!-- TODO: add switcher -->
@@ -170,10 +186,12 @@
             <p>
               <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="aplus">
             </p>
-            <h3>A Plus</h3>
           </a>
-          <p>Лендинг курсов повышения квалификации</p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>A Plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
         <li>
           <!-- TODO: add switcher -->
@@ -181,84 +199,91 @@
             <p>
               <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="kvast">
             </p>
-            <h3>КВАСТ</h3>
           </a>
-          <p>
-            Промо-сайт производителя <br />
-            крафтового кваса
-          </p>
-          <button type="button">9 900 ₽</button>
+          <div class="project">
+            <h3>КВАСТ</h3>
+            <p>
+              Промо-сайт производителя <br />
+              крафтового кваса
+            </p>
+            <button class="button" type="button"><span>9 900 ₽</span></button>
+          </div>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="pagination">
+        <li class="pagination-item">
           <a>1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">Следующая</a>
         </li>
       </ul>
     </section>
   </main>
 
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-contacts">
       <h2>NЁRDS DESIGN STUDIO</h2>
       <p>
         наб. Реки Карповки, <br />
         5 лит П, Санкт-Петербург
       </p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="footer-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       <p>
-        <button type="button">Напишите нам</button>
+        <button class="button button-footer-contacts" type="button"><span>Напишите нам</span></button>
       </p>
     </section>
 
     <!-- TODO: make map
-      <section>
+      <section class="footer-map">
         <h2>Карта</h2>
         <img src="img/map-marker.svg" width="231" height="190" alt="pink" />
       </section> -->
 
-    <section>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    <section class="footer-socials">
       <ul>
+        <!-- TODO: socials hover, focus, active -->
         <li>
-          <a href="#"><img src="img/vk-icon.svg" width="81" height="81" alt="Вконтакте" /></a>
+          <a class="social-button" href="#"><img src="img/vk-icon.svg" width="81" height="81" alt="Вконтакте" /></a>
         </li>
         <li>
-          <a href="#"><img src="img/fb-icon.svg" width="81" height="81" alt="Фейсбук" /></a>
+          <a class="social-button" href="#"><img src="img/fb-icon.svg" width="81" height="81" alt="Фейсбук" /></a>
         </li>
         <li>
-          <a href="#"><img src="img/insta-icon.svg" width="81" height="81" alt="Инстаграм" /></a>
+          <a class="social-button" href="#"><img src="img/insta-icon.svg" width="81" height="81" alt="Инстаграм" /></a>
         </li>
       </ul>
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
 
-  <!-- <section>
-      <h2>Напишите нам</h2>
-      <img src="img/close-cross.svg" width="21" height="21" alt="close" />
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label for="email">Ваш email:
-          <input id="email" type="email" name="email" placeholder="email@example.com">
-        </label>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <!-- TODO: close hover, focus, active -->
+    <!-- <button class="modal-close" type="button"></button> -->
+    <img src="img/close-cross.svg" width="21" height="21" alt="close" />
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name">Ваше имя:
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label for="email">Ваш email:
+        <input id="email" type="email" name="email" placeholder="email@example.com">
+      </label>
+      <p>
         <label for="letter">Текст письма:
           <textarea id="letter" name="letter">В свободной форме</textarea>
         </label>
-        <button type="submit">Отправить</button>
-      </form>
-    </section> -->
+      </p>
+      <button class="button button-send" type="submit"><span>Отправить</span></button>
+    </form>
+  </section>
 </body>
 
 </html>
