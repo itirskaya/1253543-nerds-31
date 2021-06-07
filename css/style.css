@@ -269,29 +269,29 @@ body {
   padding-right: 15px;
 }
 
-.services-button-green {
+.services-button-apps {
   background-color: var(--basic-green);
 }
 
-.services-button-green:hover {
+.services-button-apps:hover {
   background-color: var(--hover-green);
 }
 
-.services-button-green:focus,
-.services-button-green:active {
+.services-button-apps:focus,
+.services-button-apps:active {
   background-color: var(--click-green);
 }
 
-.services-button-yellow {
+.services-button-presentations {
   background-color: var(--basic-yellow);
 }
 
-.services-button-yellow:hover {
+.services-button-presentations:hover {
   background-color: var(--hover-yellow);
 }
 
-.services-button-yellow:focus,
-.services-button-yellow:active {
+.services-button-presentations:focus,
+.services-button-presentations:active {
   background-color: var(--click-yellow);
 }
 
@@ -459,4 +459,8 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.text-hidden {
+  visibility: hidden;
 }
