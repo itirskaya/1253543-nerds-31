@@ -30,27 +30,28 @@
         Корзина
       </a>
     </nav>
+    <section class="features">
+      <div class="features-conteiner">
+        <h2>
+          Долго, дорого, <br />
+          скрупулезно.
+        </h2>
+        <p>
+          Математически выверенный дизайн <br />
+          для вашего сайта или мобильного приложения.
+        </p>
+        <button class="button button-learn-more" type="button"><span>Узнать больше</span></button>
+      </div>
+      <a class="features-illustration">
+        <img src="img/index/nerds-index-slide1.png" width="760" height="431" alt="" />
+      </a>
+    </section>
   </header>
 
   <main class="container">
     <h1 class="text-hidden">Дизайн-студия Нёрдс</h1>
-    <section class="features">
-      <h2>
-        Долго, дорого, <br />
-        скрупулезно.
-      </h2>
-      <p>
-        Математически выверенный дизайн <br />
-        для вашего сайта или мобильного приложения.
-      </p>
-      <button class="button button-learn-more" type="button"><span>Узнать больше</span></button>
-      <a>
-        <img src="img/index/nerds-index-slide1.png" width="760" height="431" alt="" />
-      </a>
-    </section>
-
     <section class="services">
-      <h2 class="main-header">Услуги</h2>
+      <h2 class="text-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
           <a>
@@ -87,60 +88,63 @@
             type="button"><span>Заказать</span></button>
         </li>
       </ul>
-      <hr />
+      <hr class="line" />
     </section>
 
-    <section class="description">
-      <h2>
-        Мы — маленькая, но гордая <br />
-        дизайн-студия из Краснодара.
-      </h2>
-      <p>
-        Исповедуем принципы минимализма и чистоты. Ставим математический
-        расчет <br />
-        превыше креатива. Работаем не покладая рук, как роботы.
-      </p>
-      <h3>Выполняем заказы на разработку:</h3>
-      <ul class="description-list">
-        <li>
-          <a href="blank.html"> Веб-сайтов любой сложности</a>
-        </li>
-        <li>
-          <a href="blank.html">Мобильных приложений для iOS и Android</a>
-        </li>
-        <li>
-          <a href="blank.html">Слайдшоу и видео для корпоративных презентаций</a>
-        </li>
-      </ul>
-    </section>
+    <div class="description-conteiner">
+      <section class="description">
+        <h2>
+          Мы — маленькая, но гордая <br />
+          дизайн-студия из Краснодара.
+        </h2>
+        <p>
+          Исповедуем принципы минимализма и чистоты. Ставим математический
+          расчет <br />
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul class="description-list">
+          <li>
+            <a href="blank.html"> Веб-сайтов любой сложности</a>
+          </li>
+          <li>
+            <a href="blank.html">Мобильных приложений для iOS и Android</a>
+          </li>
+          <li>
+            <a href="blank.html">Слайдшоу и видео для корпоративных презентаций</a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="indicators">
-      <h2 class="main-header">Показатели</h2>
-      <a>
-        <img src="img/index/nerds-illustration.svg" width="360" height="208" alt="Логотип" />
-      </a>
-      <h3>с 2004 года Любим точность во всем:</h3>
-      <ul class="indicators-list">
-        <li>
-          <strong>146 <span>%</span></strong>
-          <p>Уровень самоотдачи</p>
-        </li>
-        <li>
-          <strong>100 <span>%</span></strong>
-          <p>Соблюдение сроков</p>
-        </li>
-        <li>
-          <strong>50 <span>%</span></strong>
-          <p>Минимальная предоплата</p>
-        </li>
-      </ul>
-    </section>
+      <section class="indicators">
+        <h2 class="text-hidden">Показатели</h2>
+        <a>
+          <img src="img/index/nerds-illustration.svg" width="360" height="208" alt="Логотип" />
+        </a>
+        <h3>с 2004 года Любим точность во всем:</h3>
+        <ul class="indicators-list">
+          <li>
+            <strong>146 <span>%</span></strong>
+            <p>Уровень <br /> самоотдачи</p>
+          </li>
+          <li>
+            <strong>100 <span>%</span></strong>
+            <p>Соблюдение <br /> сроков</p>
+          </li>
+          <li>
+            <strong>50 <span>%</span></strong>
+            <p>Минимальная <br /> предоплата</p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="partners">
-      <hr />
-      <h2>Партнеры</h2>
+      <hr class="line" />
+      <h2 class="text-hidden">Партнеры</h2>
       <ul class="partners-list">
         <!-- TODO: partners hover, focus, active -->
+        <!-- TODO: add vertical line -->
         <li>
           <a>
             <img src="img/index/logo_htmlacademy.svg" width="199" height="57" alt="htmlacademy" />
@@ -162,12 +166,12 @@
           </a>
         </li>
       </ul>
-      <hr />
+      <hr class="line" />
     </section>
   </main>
 
   <footer class="main-footer">
-    <section class="footer-contacts">
+    <!-- <section class="footer-contacts">
       <h2>NЁRDS DESIGN STUDIO</h2>
       <p>
         наб. Реки Карповки, <br />
@@ -177,7 +181,7 @@
       <p>
         <button class="button button-footer-contacts" type="button"><span>Напишите нам</span></button>
       </p>
-    </section>
+    </section> -->
 
     <!-- TODO: make map
       <section class="footer-map">
@@ -198,31 +202,33 @@
           <a class="social-button" href="#"><img src="img/insta-icon.svg" width="81" height="81" alt="Инстаграм" /></a>
         </li>
       </ul>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="socials-sale">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
   </footer>
 
-  <section class="modal">
-    <h2>Напишите нам</h2>
-    <!-- TODO: close hover, focus, active -->
-    <!-- <button class="modal-close" type="button"></button> -->
-    <img src="img/close-cross.svg" width="21" height="21" alt="close" />
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="name">Ваше имя:
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+  <!-- <section class="modal">
+    <h2>Напишите нам</h2> -->
+  <!-- TODO: close hover, focus, active -->
+  <!-- <button class="modal-close" type="button"></button> -->
+  <!-- <img src="img/close-cross.svg" width="21" height="21" alt="close" />
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+    <label for="name">Ваше имя:
+      <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+    </label>
+    <label for="email">Ваш email:
+      <input id="email" type="email" name="email" placeholder="email@example.com">
+    </label>
+    <p>
+      <label for="letter">Текст письма:
+        <textarea id="letter" name="letter">В свободной форме</textarea>
       </label>
-      <label for="email">Ваш email:
-        <input id="email" type="email" name="email" placeholder="email@example.com">
-      </label>
-      <p>
-        <label for="letter">Текст письма:
-          <textarea id="letter" name="letter">В свободной форме</textarea>
-        </label>
-      </p>
-      <button class="button button-send" type="submit"><span>Отправить</span></button>
-    </form>
-  </section>
+    </p>
+    <button class="button button-send" type="submit"><span>Отправить</span></button>
+  </form>
+  </section> -->
 </body>
 
 </html>
