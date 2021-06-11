@@ -89,7 +89,8 @@ body {
   line-height: 30px;
   background-color: transparent;
   text-transform: uppercase;
-  padding-left: 140px;
+  margin: 0 auto;
+  width: 1158px;
 }
 
 .main-header-logo {
@@ -154,7 +155,6 @@ body {
 .container {
   width: 1174px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .features {
@@ -313,6 +313,8 @@ body {
 .footer-socials {
   display: grid;
   grid-template-columns: 410px 1fr;
+  margin: 0 auto;
+  width: 1158px;
 }
 
 .footer-socials h2 {
@@ -332,7 +334,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 140px;
   padding-top: 68px;
 }
 
