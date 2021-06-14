@@ -162,7 +162,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 760px;
   grid-template-rows: 431px;
-  padding-left: 140px;
+  margin: 0 auto;
+  width: 1158px;
 }
 
 .features h2 {
@@ -295,7 +296,39 @@ body {
 
 .partners-list li {
   display: inline-block;
-  padding: 45px;
+  /* padding: 45px; */
+}
+
+.vertical-line {
+  border-right: 2px solid var(--basic-grey);
+  margin-right: 15px;
+  width: 2px;
+  height: 52px;
+  display: inline-block;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.footer-conteiner {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-template-rows: 416px;
+  padding: 54px 0 0 140px;
+  margin: 80px auto 0;
+  width: 1158px;
+}
+
+.footer-contacts {
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
+  margin-bottom: 54px;
+}
+
+.center {
+  align-self: center;
 }
 
 .footer-contacts h2 {
@@ -303,16 +336,23 @@ body {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-left: 50px;
+  padding-top: 49px;
 }
 
 .footer-contacts p {
   font-size: 16px;
   line-height: 18px;
+  padding-left: 50px;
+}
+
+.footer-pointer {
+  margin-top: 15px;
 }
 
 .footer-socials {
   display: grid;
-  grid-template-columns: 410px 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   width: 1158px;
 }
@@ -429,6 +469,11 @@ body {
   text-align: center;
 }
 
+.catalog-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
 .catalog-container ul {
   list-style: none;
 }
@@ -439,6 +484,11 @@ body {
 /* Contacts */
 .footer-contacts-phone {
   color: inherit;
+  padding-left: 50px;
+}
+
+.cost li {
+  display: inline-block;
 }
 
 .cost input {
@@ -529,10 +579,71 @@ body {
   opacity: 0.1;
 }
 
+.project-header {
+  width: 360px;
+  height: 40px;
+  background-color: #4d4d4d;
+  opacity: 0.12;
+  padding-left: 16px;
+  padding-top: 13px;
+}
+
+.project-header:hover {
+  opacity: 1;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.project-image {
+  width: 360px;
+  height: 578px;
+  padding-top: 349px;
+  display: block;
+}
+
+.sedona {
+  background-image: url("../img/catalog/img-sedona.jpg");
+  background-repeat: no-repeat;
+}
+
+.pink-app {
+  background-image: url("../img/catalog/img-pink.jpg");
+  background-repeat: no-repeat;
+}
+
+.barbershop {
+  background-image: url("../img/catalog/img-barbershop.jpg");
+  background-repeat: no-repeat;
+}
+
+.mishka {
+  background-image: url("../img/catalog/img-mishka.jpg");
+  background-repeat: no-repeat;
+}
+
+.aplus {
+  background-image: url("../img/catalog/img-aplus.jpg");
+  background-repeat: no-repeat;
+}
+
+.kvast {
+  background-image: url("../img/catalog/img-kvast.jpg");
+  background-repeat: no-repeat;
+}
+
 .project {
   width: 360px;
   height: 231px;
   background-color: var(--basic-grey);
+  text-align: center;
+  padding-top: 26px;
 }
 
 .project h3 {
