@@ -296,7 +296,6 @@ body {
 
 .partners-list li {
   display: inline-block;
-  /* padding: 45px; */
 }
 
 .vertical-line {
@@ -471,11 +470,48 @@ body {
 
 .catalog-container {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 540px 1fr;
+  padding: 0;
+  margin: 0;
 }
 
-.catalog-container ul {
+.filter {
+  justify-self: right;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.filter fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.projects-sort {
+  justify-self: start;
+  display: grid;
+  grid-template-rows: 150px 1fr;
+}
+
+.sort {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sort ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 61px;
+}
+
+.sort h2 {
+  justify-self: left;
+  margin-top: 55px;
+}
+
+.projects-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .projects .button {
@@ -485,6 +521,37 @@ body {
 .footer-contacts-phone {
   color: inherit;
   padding-left: 50px;
+}
+
+.cost legend {
+  padding-top: 55px;
+  padding-bottom: 48px;
+}
+
+.grid legend {
+  padding-bottom: 16px;
+  padding-top: 56px;
+}
+
+.blocks legend {
+  padding-bottom: 16px;
+  padding-top: 47px;
+}
+
+.cost ul,
+.grid ul,
+.blocks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid li {
+  padding-bottom: 18px;
+}
+
+.blocks li {
+  padding-bottom: 20px;
 }
 
 .cost li {
@@ -525,6 +592,7 @@ body {
   border: 0;
   background-color: var(--basic-grey);
   padding: 17px 89px 15px 88px;
+  border-radius: 3px;
 }
 
 .cost legend,
@@ -661,6 +729,7 @@ body {
 
 .projects-list li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .pagination li {
@@ -745,5 +814,6 @@ body {
 }
 
 .text-hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
