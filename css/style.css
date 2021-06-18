@@ -316,7 +316,10 @@ body {
   grid-template-rows: 416px;
   padding: 54px 0 0 140px;
   margin: 80px auto 0;
-  width: 1158px;
+  /* width: 1158px; */
+  width: 100%;
+  object-fit: cover;
+  /* background-position: center center; */
 }
 
 .footer-contacts {
