@@ -310,7 +310,7 @@ body {
 
 .footer-conteiner {
   background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: grid;
   grid-template-columns: 1fr 450px;
   grid-template-rows: 416px;
