@@ -309,24 +309,30 @@ body {
 }
 
 .footer-conteiner {
-  background-image: url("../img/map.jpg");
-  background-repeat: repeat;
-  display: grid;
-  grid-template-columns: 1fr 450px;
-  grid-template-rows: 416px;
-  padding: 54px 0 0 140px;
-  margin: 80px auto 0;
-  /* width: 1158px; */
+  /* позиционирую блок абсолютно, поэтому гриды не нужны, и вообще этот класс можно заменить классом wrapper */
+}
+.map-container {
+  position: relative;
+
+}
+img.map-img {
   width: 100%;
   object-fit: cover;
-  /* background-position: center center; */
+  height:416px;
 }
-
+.wrapper {
+  margin: 0 auto;
+  width: 1158px;
+  position: relative;
+}
 .footer-contacts {
+  position: absolute;
+  top: -368px;
+  left: 20px;
+  z-index: 6;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
-  margin-bottom: 54px;
 }
 
 .center {
@@ -472,8 +478,14 @@ body {
 }
 
 .catalog-container {
+  width: 1158px;
   display: grid;
-  grid-template-columns: 540px 760px;
+  grid-template-columns: 400px 1fr;
+  /**
+  ширина колонки 400px а не 560px
+  сумма данных колонок больше ширины макета,
+  лучше сделать одну фиксированную,
+  вторую 1fr - ширина автоматом посчитается**/
   padding: 0;
   margin: 0 auto;
   align-items: center;
@@ -481,8 +493,7 @@ body {
 
 .filter {
   align-self: flex-start;
-  padding-left: 140px;
-  padding-right: 140px;
+  /**убираю отступы - колонка уже нужной ширины, отступ же есть у catalog-container **/
 }
 
 .filter fieldset {
