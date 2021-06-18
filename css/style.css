@@ -470,13 +470,14 @@ body {
 
 .catalog-container {
   display: grid;
-  grid-template-columns: 540px 1fr;
+  grid-template-columns: 540px 760px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .filter {
-  justify-self: right;
+  align-self: flex-start;
   padding-left: 140px;
   padding-right: 140px;
 }
