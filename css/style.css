@@ -185,15 +185,15 @@ body {
 /* services */
 .services-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   padding: 0;
-  margin: 0;
-  padding-bottom: 80px;
 }
 
 .services-item {
   text-align: left;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 100px;
 }
 
 .services-item h3 {
@@ -206,6 +206,10 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+.description {
+  padding-bottom: 73px;
 }
 
 .description-conteiner {
@@ -242,10 +246,11 @@ body {
 
 .description-list {
   list-style: none;
-  padding-left: 1px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.description-list li {
+.description-list li:not(:last-child) {
   padding-bottom: 20px;
 }
 
@@ -254,21 +259,29 @@ body {
   color: var(--basic-red);
 }
 
+.indicators {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .indicators-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.indicators-list li {
+/* .indicators-list li {
   display: inline-block;
-}
+} */
 
-.indicators h3 {
+/* .indicators h3 {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-}
+} */
 
 .indicators strong {
   font-weight: bold;
@@ -292,10 +305,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.partners-list li {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .vertical-line {
@@ -303,9 +315,6 @@ body {
   margin-right: 15px;
   width: 2px;
   height: 52px;
-  display: inline-block;
-  margin-left: 45px;
-  margin-right: 45px;
 }
 
 .footer-conteiner {
@@ -473,7 +482,7 @@ body {
 
 .catalog-container {
   display: grid;
-  grid-template-columns: 540px 760px;
+  grid-template-columns: 398px 760px;
   padding: 0;
   margin: 0 auto;
   align-items: center;
@@ -481,8 +490,6 @@ body {
 
 .filter {
   align-self: flex-start;
-  padding-left: 140px;
-  padding-right: 140px;
 }
 
 .filter fieldset {
@@ -505,6 +512,7 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 61px;
+  justify-self: right;
 }
 
 .sort h2 {
