@@ -95,7 +95,7 @@ body {
 
 .main-header-logo {
   justify-self: start;
-  padding-top: 55px;
+  padding-top: 49px;
 }
 
 .bin {
@@ -125,6 +125,7 @@ body {
 a.bin {
   display: flex;
   align-items: baseline;
+  justify-self: flex-end;
 }
 
 a.bin::before {
@@ -139,13 +140,13 @@ a.bin::before {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 75px;
   justify-self: center;
 }
 
 .site-navigation li {
   display: inline-block;
   padding-left: 45px;
-  padding-top: 75px;
 }
 
 .site-navigation a:not([href]) {
@@ -539,6 +540,10 @@ img.map-img {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 72px;
+  margin-bottom: 108px;
 }
 
 .catalog-container {
@@ -573,12 +578,14 @@ img.map-img {
 .sort ul {
   padding: 0;
   margin: 0;
-  padding-top: 61px;
+  padding-top: 60px;
   justify-self: right;
 }
 
 .sort h2 {
   justify-self: left;
+  margin: 0;
+  padding: 0;
   margin-top: 55px;
 }
 
@@ -588,9 +595,10 @@ img.map-img {
   margin: 0;
 }
 
-.projects {
-  padding: 17px 72px 15px 72px;
-}
+/* .projects {
+  padding: 0px;
+  margin: 0px;
+} */
 /* Contacts */
 .footer-contacts-phone {
   color: inherit;
@@ -726,12 +734,16 @@ img.map-img {
   height: 40px;
   background-color: #4d4d4d;
   opacity: 0.12;
-  padding-left: 16px;
-  padding-top: 13px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .project-header:hover {
   opacity: 1;
+}
+
+.project-header div:first-child{
+  margin-left: 15px;
 }
 
 .circle {
@@ -741,12 +753,12 @@ img.map-img {
   border-radius: 50%;
   display: inline-block;
   margin-right: 9px;
+  margin-top: 13px;
 }
 
 .project-image {
   width: 360px;
   height: 578px;
-  padding-top: 349px;
   display: block;
 }
 
@@ -786,6 +798,7 @@ img.map-img {
   background-color: var(--basic-grey);
   text-align: center;
   padding-top: 26px;
+  margin-top: 349px;
 }
 
 .project h3 {
@@ -801,9 +814,33 @@ img.map-img {
   color: var(--ligth-grey-text);
 }
 
-.projects-list li {
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.project-conteiner {
+  width: 360px;
+  height: 659px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .projects-list li {
   display: inline-block;
   vertical-align: top;
+} */
+
+.pagination {
+  margin-bottom: 60px;
 }
 
 .pagination li {
