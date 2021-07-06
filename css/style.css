@@ -118,7 +118,20 @@ body {
   color: var(--clicked-link-grey);
 }
 
-.bin img {
+/* .bin img {
+  margin-right: 25px;
+} */
+
+a.bin {
+  display: flex;
+  align-items: baseline;
+}
+
+a.bin::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
   margin-right: 25px;
 }
 
