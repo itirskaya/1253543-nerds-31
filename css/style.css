@@ -757,6 +757,7 @@ img.map-img {
   height: 578px;
   display: inline-block;
   position: relative;
+  background-size: cover;
 }
 
 .sedona {
