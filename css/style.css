@@ -595,10 +595,6 @@ img.map-img {
   margin: 0;
 }
 
-/* .projects {
-  padding: 0px;
-  margin: 0px;
-} */
 /* Contacts */
 .footer-contacts-phone {
   color: inherit;
@@ -742,7 +738,7 @@ img.map-img {
   opacity: 1;
 }
 
-.project-header div:first-child{
+.project-header div:first-child {
   margin-left: 15px;
 }
 
@@ -759,7 +755,8 @@ img.map-img {
 .project-image {
   width: 360px;
   height: 578px;
-  display: block;
+  display: inline-block;
+  position: relative;
 }
 
 .sedona {
@@ -798,7 +795,8 @@ img.map-img {
   background-color: var(--basic-grey);
   text-align: center;
   padding-top: 26px;
-  margin-top: 349px;
+  position: absolute;
+  bottom: 0;
 }
 
 .project h3 {
@@ -829,15 +827,7 @@ img.map-img {
   width: 360px;
   height: 659px;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-
-/* .projects-list li {
-  display: inline-block;
-  vertical-align: top;
-} */
 
 .pagination {
   margin-bottom: 60px;
